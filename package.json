@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://flair.github.io",
+  "homepage": "https://flair.github.io/flair",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.11",

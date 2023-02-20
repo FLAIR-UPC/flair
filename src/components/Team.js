@@ -3,21 +3,23 @@ const people = [
       name: 'Ilker Demirkol',
       role: 'Project Leader',
       imageUrl:
-        'https://i1.rgstatic.net/ii/profile.image/273612565381122-1442245727070_Q128/Ilker-Demirkol.jpg',
+        'Ilker',
     },
     {
     name: 'Anass Anhari',
     role: 'Contributor',
     imageUrl:
         // https://drive.google.com/file/d/1aMwgRJAf4Bmkm-vcPRKK35VAtWLsKEEB/view?usp=share_link
-        'https://drive.google.com/uc?export=view&id=1aMwgRJAf4Bmkm-vcPRKK35VAtWLsKEEB'
+        // 'https://drive.google.com/uc?export=view&id=1aMwgRJAf4Bmkm-vcPRKK35VAtWLsKEEB'
+        'Anass'
     },
     {
     name: 'Daniel Alamillo',
     role: 'Contributor',
     imageUrl:
         // https://drive.google.com/file/d/1QfuzB5agcJ31uGNO2_kKqHH0oR5tqpyw/view?usp=sharing
-        'https://drive.google.com/uc?export=view&id=1QfuzB5agcJ31uGNO2_kKqHH0oR5tqpyw',
+        // 'https://drive.google.com/uc?export=view&id=1QfuzB5agcJ31uGNO2_kKqHH0oR5tqpyw',
+        'Daniel'
     }
   ]
   
@@ -35,7 +37,7 @@ const people = [
             {people.map((person) => (
               <li key={person.name}>
                 <div className="flex items-center gap-x-6">
-                  <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                  <img className="h-16 w-16 rounded-full" src={require('../images/' + person.imageUrl + '.jpeg')} alt={person.name} />
                   <div>
                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                     <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
